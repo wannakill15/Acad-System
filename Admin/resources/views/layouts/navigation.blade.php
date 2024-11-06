@@ -16,8 +16,26 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <!-- Appointments -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('appointments')" :active="request()->routeIs('appointments')">
+                        {{ __('Appointments List') }}
+                    </x-nav-link>
+                </div>
+                <!-- Appointment Settings -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('appointments')" :active="request()->routeIs('appointments')">
+                        {{ __('Appointments Settings') }}
+                    </x-nav-link>
+                </div>
+                <!-- User list -->
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('appointments')" :active="request()->routeIs('appointments')">
+                        {{ __('User List') }}
+                    </x-nav-link>
+                </div>
             </div>
-
+            
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">

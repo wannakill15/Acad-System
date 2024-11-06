@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.metric {
+    background: var (--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(52, 113, 243, 0.1);
+    flex: 1;
+    /* margin-right: 20px;
+    margin-left: 20px; */
+    margin: 20px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  td {
+    background-color: #ffffff;
+  }
+  
+  th:first-child, td:first-child {
+    padding-left: 16px;
+  }
+  
+  th:last-child, td:last-child {
+    padding-right: 16px;
+  }
+  
+  .actions {
+    text-align: center;
+  }
